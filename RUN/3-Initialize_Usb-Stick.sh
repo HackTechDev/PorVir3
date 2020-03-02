@@ -1,0 +1,12 @@
+#!/bin/sh
+
+lsusb
+
+HOSTBUS=002
+HOSTADDR=004
+
+VENDORID=058f
+PRODUCTID=6387
+
+sudo chmod 666 /dev/bus/usb/$HOSTBUS/$HOSTADDR
+
