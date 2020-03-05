@@ -54,4 +54,5 @@ H_DESKTOP=`env | grep DESKTOP_SESSION=`
 H_DESKTOP=$(echo $H_DESKTOP | cut -f2 -d=)
 H_DISTRIB=$(echo "$H_DESKTOP" | tr '[:lower:]' '[:upper:]')
 
+echo "Host machine:"
 echo $H_DISTRIB $H_VERSION $H_PROC
