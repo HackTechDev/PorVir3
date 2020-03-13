@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 . 1-Initialize_Host_Machine.sh
 . 2-Initialize_Network.sh 2
