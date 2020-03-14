@@ -1,7 +1,6 @@
 #!/bin/sh
 
 
-
 case "$1" in
     enp) echo "enp"
         sudo ip link set dev tap0 down

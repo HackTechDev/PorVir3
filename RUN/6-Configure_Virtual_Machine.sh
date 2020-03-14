@@ -124,6 +124,10 @@ case "$2" in
 	;;
 
 
+	5) echo "LXLE"
+	G_DISTRIB=LXLE
+	;;
+
     *) echo "Distribution not found"
     ;;
 
