@@ -48,6 +48,13 @@ case "$1" in
         sudo ip link set tap0 up
         sudo ip link set tap0 master br0
 
+        sleep 2 
+
+        sudo ip tuntap add tap1 mode tap
+        sudo ip link set tap1 up
+        sudo ip link set tap1 master br0
+
+
         sleep 2
 
         sudo brctl show
