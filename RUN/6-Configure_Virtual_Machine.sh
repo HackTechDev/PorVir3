@@ -176,14 +176,19 @@ case "$4" in
     ;;
 esac
 
+
+echo "- Tap -"
+TAP=$5
+
+
 echo "- Virtual disk -"
 echo "vda"
 VDA=vda
 
 echo "- Application -"
-case "$5" in
+case "$6" in
 	*) 
-	APP=`echo $5 | tr a-z A-Z`
+	APP=`echo $6 | tr a-z A-Z`
     echo $APP
 	;;
 esac

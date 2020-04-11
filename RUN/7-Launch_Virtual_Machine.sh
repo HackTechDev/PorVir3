@@ -8,7 +8,7 @@ case "$1" in
 	        -drive file=../../pvvd/GUEST/$G_DISTRIB/$G_VERSION/$G_PROC/$APP/VD/$VDA.qcow2,format=qcow2,index=0,media=disk \
 	        -enable-kvm  -m $RAM -sdl -vga std \
 	        -soundhw hda,ac97 \
-	        -net nic,macaddr=$MACADDRESS -net tap,ifname=tap0,script=no \
+	        -net nic,macaddr=$MACADDRESS -net tap,ifname=tap$TAP,script=no \
 	        -smp $CORE \
 	        -rtc base=localtime -no-quit \
 	        -bios ../HOST/$H_DISTRIB/$H_VERSION/$H_PROC/QEMU/$QEVER/pc-bios/bios-256k.bin \
@@ -22,7 +22,7 @@ case "$1" in
 	        -drive file=../../pvvd/GUEST/$G_DISTRIB/$G_VERSION/$G_PROC/$APP/VD/$VDA.qcow2,format=qcow2,index=0,media=disk \
 	        -enable-kvm  -m $RAM -sdl -vga std \
 	        -soundhw hda,ac97 \
-	        -net nic,macaddr=$MACADDRESS -net tap,ifname=tap0,script=no \
+	        -net nic,macaddr=$MACADDRESS -net tap,ifname=tap$TAP,script=no \
 	        -smp $CORE \
 	        -rtc base=localtime -no-quit \
 	        -bios ../HOST/$H_DISTRIB/$H_VERSION/$H_PROC/QEMU/$QEVER/pc-bios/bios-256k.bin &
