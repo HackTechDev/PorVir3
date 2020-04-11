@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 MACADDRESS=`printf 'DE:AD:BE:EF:%02X:%02X' $((RANDOM%256)) $((RANDOM%256))`
 

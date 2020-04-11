@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 sudo modprobe kvm
 sudo modprobe kvm-amd

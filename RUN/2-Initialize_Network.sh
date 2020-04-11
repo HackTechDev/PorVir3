@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Network packages:
 # apt-get install uml-utilities

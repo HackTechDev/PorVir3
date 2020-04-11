@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Qemu 2.11.1 / 3.0.0 / 4.2.0
 # Ubuntu / Lubuntu / FreeBSD / GhostBSD
