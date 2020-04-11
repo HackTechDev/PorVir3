@@ -26,6 +26,6 @@ Execute script
 ==============
 
 Under Bash:
-. runGhostBSD_Doom.sh
+. ./runGhostBSD_Doom.sh
 or
-source runGhostBSD_Doom.sh
+source ./runGhostBSD_Doom.sh
