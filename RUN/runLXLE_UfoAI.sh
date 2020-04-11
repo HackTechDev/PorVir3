@@ -1,17 +1,16 @@
 #!/bin/bash
 
-if [[ -z "${installpv}" ]] 
+if [[ ! -f ".lock" ]] 
 then
     echo "1st install"
-    export installpv=1
-    echo $installpv
+    echo $installpv > .lock
 
-    . ./2-Initialize_Network.sh 2
-    . ./3-Initialize_Virtualization.sh
+    . 2-Initialize_Network.sh 2
+    . 3-Initialize_Virtualization.sh
 fi
 
 echo "2nd install"
-echo $installpv
+
 
 . 1-Initialize_Host_Machine.sh
 . 4-Initialize_Guest_Hardware.sh 2048 2
