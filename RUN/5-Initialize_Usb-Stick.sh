@@ -13,7 +13,7 @@ do
     HOSTADDR=`echo $i | cut -d" "  -f2`
     VENDORID=`echo $i | cut -d" "  -f3`
     PRODUCTID=`echo $i | cut -d" "  -f4`
-    if [ "$VENDORID" == "$DMESGVENDORID" ] && [ "$PRODUCTID" == "$DMESGPRODUCTID" ] 
+    if [ "$VENDORID" = "$DMESGVENDORID" ] && [ "$PRODUCTID" = "$DMESGPRODUCTID" ] 
     then
         echo $HOSTBUS $HOSTADDR $VENDORID $PRODUCTID
         break
