@@ -33,6 +33,11 @@ case "$1" in
 	QEVER=2.5.0
 	;;
 
+	5) echo "- Qemu -"
+    echo "5.0.0"
+	QEVER=5.0.0
+	;;
+
 
     l) echo "Virtual Machine list:"
         echo "Qemu_2.11.1-FreeBSD_12.1_64-MultiUser-Minetest"
