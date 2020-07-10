@@ -54,6 +54,18 @@ case "$1" in
         sudo ip link set tap1 up
         sudo ip link set tap1 master br0
 
+        sleep 2 
+
+        sudo ip tuntap add tap2 mode tap
+        sudo ip link set tap2 up
+        sudo ip link set tap2 master br0
+
+        sleep 2 
+
+        sudo ip tuntap add tap3 mode tap
+        sudo ip link set tap3 up
+        sudo ip link set tap3 master br0
+
 
         sleep 2
 
