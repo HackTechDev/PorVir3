@@ -44,6 +44,12 @@ case "$1" in
 	QEVER=5.1.0
 	;;
 
+	7) echo "- Qemu -"
+    echo "6.0.0"
+	QEVER=6.0.0
+	;;
+
+
     h) echo "Help:"
         echo "Qemu version:"
         echo "1 - 2.11.1"
